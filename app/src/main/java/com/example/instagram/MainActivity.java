@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        queryPosts();
+        queryPosts();
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
