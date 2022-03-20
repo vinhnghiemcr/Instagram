@@ -10,31 +10,14 @@
     android:orientation="vertical">
 
 
-    <EditText
-        android:id="@+id/etDescription"
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:minHeight="48dp"
-        tools:hint="Description" />
-
-    <Button
-        android:id="@+id/btnCaptuteImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TAKE PICTURE" />
-
-    <ImageView
-        android:id="@+id/ivPostImage"
-        android:layout_width="match_parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:layout_height="200dp"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnSubmit"
-        android:text="Submit"/>
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_bottom_navigation" />
 
 
 </LinearLayout>
