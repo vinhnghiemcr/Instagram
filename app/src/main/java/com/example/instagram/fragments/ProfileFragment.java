@@ -32,7 +32,7 @@ public class ProfileFragment extends PostsFragment{
                 for (Post post : posts) {
                     Log.i(TAG, "Post " + post.getDescription() + " username = " + post.getUser().getUsername());
                 }
-
+                allPosts.clear();
                 allPosts.addAll(posts);
                 adapter.notifyDataSetChanged();
             }
